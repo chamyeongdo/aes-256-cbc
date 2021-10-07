@@ -1,0 +1,18 @@
+{
+  "name": "aes-256-cbc",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "pkg ."
+  },
+  "bin": "src/index.js",
+  "pkg": {
+    "outputPath": "dist",
+    "scripts": "src/**/*.js",
+    "targets": [ "macos-x64", "win-x64" ]
+  },
+  "devDependencies": {
+    "pkg": "^5.3.3"
+  }
+}
